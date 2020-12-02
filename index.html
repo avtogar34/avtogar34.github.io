@@ -648,17 +648,34 @@
 						</div>
 						<div class="form-request">
 							<div class="row">
-								<form action="https://formspree.io/f/mnqobwrw" method="POST">
-  									<label> Ваш адрес email:
-    								<input type="text" name="_replyto">
-  									</label>
-  									<label> Ваше сообщение:
-    								<textarea name="message"></textarea>
-  									</label>
-
-  									<!-- your other form fields go here -->
-
-  									<button type="submit">Отправить</button>
+								<form class="mb-0" action="https://formspree.io/f/mnqobwrw" method="POST">
+									<div class="col-xs-12 col-sm-12 col-md-6">
+										<input type="text" class="form-control" name="your-name" placeholder="Ваше имя">
+									</div>
+									<!-- .col-md-6 end -->
+									<div class="col-xs-12 col-sm-12 col-md-6">
+										<input type="email" class="form-control" name="your-email"
+											placeholder="Ваш Email">
+									</div>
+									<!-- .col-md-6 end -->
+									<div class="col-xs-12 col-sm-12 col-md-12">
+										<select class="form-control">
+											<option>Выберите категорию</option>
+											<option>ДТП</option>
+											<option>Взыская с должников</option>
+											<option>Представление интересов</option>
+										</select>
+									</div>
+									<!-- .col-md-12 end -->
+									<div class="col-xs-12 col-sm-12 col-md-12">
+										<textarea class="form-control" name="your-message" rows="3"
+											placeholder="Опишите вашу проблему"></textarea>
+									</div>
+									<!-- .col-md-12 end -->
+									<div class="col-xs-12 col-sm-12 col-md-6">
+										<input type="submit" class="btn btn--primary" value="Отправить запрос">
+									</div>
+									<!-- .col-md-6 end -->
 								</form>
 							</div>
 						</div>
